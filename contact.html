@@ -20,175 +20,162 @@
         <link rel="stylesheet" href="css/responsive.css">
     </head>
     <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/lgo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">SkillSet</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
-										<!-- <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li> -->
-									</ul>
-								</li> 
-								<!-- <li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li>  -->
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
+                
+<!--================Header Menu Area =================-->
+<header class="header_area">
+    <div class="main_menu">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/lgo.png" alt="Simon Kuria" style="width: 100px; height: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="material-icons">menu</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" data-section="home">
+                                <span class="material-icons">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" data-section="projects">
+                                <span class="material-icons">android</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#timeline" data-section="timeline">
+                                <span class="material-icons">timeline</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#skills" data-section="skills">
+                                <span class="material-icons">skills</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <span class="material-icons">Contacts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="banner_area">
-            <div class="box_1620">
-				<div class="banner_inner d-flex align-items-center">
-					<div class="container">
-						<div class="banner_content text-center">
-							<h2>Contact Us</h2>
-							<div class="page_link">
-								<a href="index.html">Home</a>
-								<a href="contact.html">Contact your Dev</a>
-							</div>
-						</div>
-					</div>
-				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
+        </nav>
+    </div>
+</header>
+<!--================Header Menu Area =================-->
+
+
         <!--================Contact Area =================-->
         <section class="contact_area p_120">
             <div class="container">
-                <div id="mapBox" class="mapBox" 
-                        data-lat="-0.303099" 
-                        data-lon="36.080025" 
-                        data-zoom="13" 
-                        data-info="Nakuru Town, Nakuru County, Kenya."
-                        data-mlat="-0.303099"
-                        data-mlon="36.080025">
+                <div class="terminal_container">
+                    <!-- Terminal Header -->
+                    <div class="terminal_header">
+                        <div class="terminal_buttons">
+                            <span class="terminal_button close"></span>
+                            <span class="terminal_button minimize"></span>
+                            <span class="terminal_button maximize"></span>
+                        </div>
+                        <div class="terminal_title">contact.sh - SimonDev Terminal</div>
                     </div>
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="contact_info">
-                            <div class="info_item">
-                                <i class="lnr lnr-home"></i>
-                                <h6>Nakuru, Kenya</h6>
-                                <p> Kipkelion</p>
-                            </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-phone-handset"></i>
-                                <h6><a href="#">+254 (11) 4488 930</a></h6>
-                                <p>Mon to Fri 9am to 5 pm</p>
-                            </div>
-                            <div class="info_item">
-                                <i class="lnr lnr-envelope"></i>
-                                <h6><a href="mailto:simonkuriah7@gmail.com">simonkuriah7@gmail.com</a></h6>
-                                <p>Send me your query anytime!</p>
+
+                    <!-- Terminal Content -->
+                    <div class="terminal_content">
+                        <!-- Contact Info Section -->
+                        <div class="terminal_section">
+                            <span class="prompt">dev@simon:~$</span>
+                            <span class="command">cat contact_info.json</span>
+                            <div class="output">
+                                {
+                                    "contact": {
+                                        <div class="contact_item" onclick="copyToClipboard('simonkuriah7@gmail.com')">
+                                            "email": "<span class="value">simonkuriah7@gmail.com</span>"<span class="syntax">,</span>
+                                            <span class="copy_icon" title="Copy email"><i class="fa fa-copy"></i></span>
+                                        </div>
+                                        <div class="contact_item" onclick="copyToClipboard('+254 114 88 930')">
+                                            "phone": "<span class="value">+254 114 88 930</span>"<span class="syntax">,</span>
+                                            <span class="copy_icon" title="Copy phone"><i class="fa fa-copy"></i></span>
+                                        </div>
+                                        "location": "<span class="value">Kericho, Kenya</span>"<span class="syntax">,</span>
+                                        "availability": "<span class="value">Mon-Fri, 9:00 - 18:00 EAT</span>"
+                                    }
+                                }
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
-                                </div>
+
+                        <!-- Social Links Section -->
+                        <div class="terminal_section">
+                            <span class="prompt">dev@simon:~$</span>
+                            <span class="command">ls social_links/</span>
+                            <div class="output">
+                                <a href="https://github.com/Sighmore" class="social_item">
+                                    <i class="fa fa-github"></i> github.com/Sighmore
+                                </a>
+                                <a href="https://www.linkedin.com/in/simon-kuria-4562301a6/" class="social_item">
+                                    <i class="fa fa-linkedin"></i> linkedin.com/in/simon-kuria
+                                </a>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                        </div>
+
+                        <!-- Contact Form Section -->
+                        <div class="terminal_section">
+                            <span class="prompt">dev@simon:~$</span>
+                            <span class="command">vim new_message.md</span>
+                            <form class="contact_form" action="contact_process.php" method="post">
+                                <div class="form_group">
+                                    <input type="text" name="name" placeholder="const name = 'Your Name'" required>
                                 </div>
-                            </div>
-                            <div class="col-md-12 text-right">
-                                <button type="submit" value="submit" class="btn submit_btn">Send Message</button>
-                            </div>
-                        </form>
+                                <div class="form_group">
+                                    <input type="email" name="email" placeholder="const email = 'your@email.com'" required>
+                                </div>
+                                <div class="form_group">
+                                    <textarea name="message" placeholder="/* Your message here */" required></textarea>
+                                </div>
+                                <button type="submit" class="btn submit_btn">
+                                    <i class="fa fa-paper-plane"></i> Send Message
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!--================Contact Area =================-->
         
+         
         <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<div class="f_title">
-        						<h3>About Me</h3>
-        					</div>
-        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-        					<p>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">InoXoft</a>
-</p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3>Suggestion Box</h3>
-        					</div>
-        					<p>Hit me up with an idea</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
-                            </div>
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>Follow Me</h3>
-        					</div>
-        					<p>Let us be social</p>
-        					<ul class="list">
-        						<li><a href="https://www.linkedin.com/in/simon-githongo-4562301a6/"><i class="fa fa-facebook"></i></a></li><!--LinkedIn-->
-        						<li><a href="https://x.com/Simonku06649095"><i class="fa fa-twitter"></i></a></li><!--twitter-->
-        						<li><a href="https://github.com/Sighmore"><i class="fa fa-dribbble"></i></a></li><!--Github-->
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
-        					</ul>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
+        <footer class="footer_area">
+            <div class="footer_inner">
+                <div class="f_widget">
+                    <span class="copyright">© 2024 Simon Kuria</span>
+                </div>
+                
+                <div class="f_widget">
+                    <div class="social_links">
+                        <a href="https://github.com/Sighmore" class="social_link" title="GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/simon-kuria-4562301a6/" class="social_link" title="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:simonkuriah7@gmail.com" class="social_link" title="Email">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="f_widget">
+                    <span class="made_with">
+                        Made with <i class="fa fa-heart"></i> and Kotlin
+                    </span>
+                </div>
+            </div>
         </footer>
         <!--================End Footer Area =================-->
+        
         
         <!--================Contact Success and Error message Area =================-->
         <div id="success" class="modal modal-message fade" role="dialog">

@@ -83,3 +83,17 @@ $(document).ready(function(){
         
  })(jQuery)
 })
+
+function copyToClipboard(text) {
+    navigator.clipboard.writeText(text).then(() => {
+        // Show success message
+        const toast = document.createElement('div');
+        toast.className = 'copy_toast';
+        toast.textContent = 'Copied to clipboard!';
+        document.body.appendChild(toast);
+        
+        setTimeout(() => {
+            toast.remove();
+        }, 2000);
+    });
+}

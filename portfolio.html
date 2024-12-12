@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="icon" href="img/logofav.png" type="image/png">
-        <title>AndroidDev</title>
+        <title>Simon Kuria | Android Developer</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="vendors/linericon/style.css">
@@ -22,210 +23,232 @@
     </head>
     <body>
         
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/lgo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">SkillSet</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
-										<!-- <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li> -->
-									</ul>
-								</li> 
-								<!-- <li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li>  -->
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
+                <!--================Header Menu Area =================-->
+                <header class="header_area">
+                    <div class="main_menu">
+                        <nav class="navbar navbar-expand-lg">
+                            <div class="container">
+                                <a class="navbar-brand" href="index.html">
+                                    <img src="img/lgo.png" alt="Simon Kuria" style="width: 100px; height: auto;">
+                                    </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                                    <span class="material-icons" style="color: var(--text-primary)">menu</span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="index.html">
+                                                <span class="material-icons">home</span>
+                                                <span>Home</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="portfolio.html">
+                                                <span class="material-icons">android</span>
+                                                <span>Projects</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="services.html">
+                                                <span class="material-icons">code</span>
+                                                <span>Skills</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="contact.html">
+                                                <span class="material-icons">contact_mail</span>
+                                                <span>Contact</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <!--================Header Menu Area =================-->
+				
         <!--================Home Banner Area =================-->
         <section class="banner_area">
-            <div class="box_1620">
-				<div class="banner_inner d-flex align-items-center">
-					<div class="container">
-						<div class="banner_content text-center">
-							<h2>Portfolio</h2>
-							<div class="page_link">
-								<a href="index.html">Home</a>
-								<a href="portfolio.html">Portfolio</a>
-							</div>
-						</div>
-					</div>
-				</div>
+            <div class="container">
+                <div class="banner_inner d-flex align-items-center">
+                    <div class="container">
+                        <div class="banner_content text-center">
+                            <h2><span class="material-icons">code</span> Featured Projects</h2>
+                            <p class="text-white mb-3">Native Android Apps • Web Development • UI/UX Design</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!--================End Home Banner Area =================-->
         
+        <!--================Skills Area =================-->
+        <section class="skills_area p_120">
+            <div class="container">
+                <div class="main_title">
+                    <h2>Technical Skills</h2>
+                    <p>Core competencies in Android development and related technologies</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="skill_item">
+                            <h4>Kotlin & Android SDK <span class="counter">95</span>%</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <h4>Material Design <span class="counter">90</span>%</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="skill_item">
+                            <h4>Clean Architecture <span class="counter">85</span>%</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill_item">
+                            <h4>Jetpack Compose <span class="counter">80</span>%</h4>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--================End Skills Area =================-->
+        
         <!--================Home Gallery Area =================-->
-        <section class="home_gallery_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>My Latest Projects</h2>
-        			<p>Great UX & UI Apps.</p>
-        		</div>
-        		<div class="isotope_fillter">
-        			<ul class="gallery_filter list">
-						<li class="active" data-filter="*"><a href="#">All</a></li>
-						<li data-filter=".brand"><a href="#">Finances</a></li>
-						<li data-filter=".manipul"><a href="#">Client</a></li>
-						<li data-filter=".creative"><a href="#">UI/UX</a></li>
-						<!-- <li data-filter=".design"><a href="#">Printing</a></li> -->
-					</ul>
-        		</div>
-        	</div>
-        	<div class="container">
-        		<div class="gallery_f_inner row imageGallery1">
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/Dark theme.png" alt="">
-        						<a class="light" href="img/gallery/p1.png"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4><a href="">Banking App</a></h4>
-        						<p>An android Finances Management app</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/p1.png" alt="">
-        						<a class="light" href="img/gallery/Dark theme.png"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Weather App</h4>
-        						<p>API & Room Utility</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/home.png" alt="">
-        						<a class="light" href="img/gallery/records.png"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4><a href="https://github.com/Sighmore/Mkulima-app">Firebase Auth</a></h4>
-        						<p>Mkulima App</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/limitless fx.png" alt="">
-        						<a class="light" href="img/gallery/limitless fx.png"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4><a href="https://github.com/Sighmore/limitlessfx">Limitless fx</a></h4>
-        						<p>Gold trading website that utilizes the tradingview api</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/InoXoft.png" alt="">
-        						<a class="light" href="img/gallery/InoXoft.png"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4><a href="https://github.com/Sighmore/Portfolio-website">InoXoft</a></h4>
-        						<p>A client website</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/Adaptive password generator.png" alt="">
-        						<a class="light" href="img/gallery/Adaptive password generator.png"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4><a href="https://github.com/Sighmore/password-generator">UniQ</a></h4>
-        						<p>An adaptive password generator module</p>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="more_btn">
-        			<a class="main_btn" href="#">Load More Items</a>
-        		</div>
-        	</div>
+        <section class="featured_projects">
+            <div class="container">
+                <h2 class="section_title">Recent Work</h2>
+                <div class="row">
+                    <!-- Banking App -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project_card">
+                            <div class="project_image">
+                                <img src="img/gallery/Dark theme.png" 
+                                     alt="Banking App"
+                                     style="object-position: center top;
+                                            max-height: 100%;
+                                            background: var(--background-elevated);">
+                                <div class="project_overlay">
+                                    <div class="project_links">
+                                        <a href="https://github.com/yourusername/banking-app" class="github_link">
+                                            <i class="fa fa-github"></i> View Source
+                                        </a>
+                                        <a href="#" class="demo_link">
+                                            <i class="material-icons">play_circle</i> Live Demo
+                                        </a>
+                                    </div>
+                                    <div class="project_info">
+                                        <h3>Modern Banking App</h3>
+                                        <p>A feature-rich financial management application built with modern Android practices</p>
+                                        <div class="tech_stack">
+                                            <span class="tech_badge">Kotlin</span>
+                                            <span class="tech_badge">MVVM</span>
+                                            <span class="tech_badge">Room DB</span>
+                                            <span class="tech_badge">Material 3</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mkulima App -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project_card">
+                            <div class="project_image">
+                                <img src="img/gallery/home.png" 
+                                     alt="Mkulima App"
+                                     style="object-position: center top;
+                                            max-height: 100%;
+                                            background: var(--background-elevated);">
+                                <div class="project_overlay">
+                                    <div class="project_links">
+                                        <a href="https://github.com/Sighmore/Mkulima-app" class="github_link">
+                                            <i class="fa fa-github"></i> View Source
+                                        </a>
+                                    </div>
+                                    <div class="project_info">
+                                        <h3>Mkulima App</h3>
+                                        <p>A modern farming management application with Firebase integration</p>
+                                        <div class="tech_stack">
+                                            <span class="tech_badge">Kotlin</span>
+                                            <span class="tech_badge">Firebase</span>
+                                            <span class="tech_badge">MVVM</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Limitless FX -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="project_card">
+                            <div class="project_image">
+                                <img src="img/gallery/limitless fx.png" 
+                                     alt="Limitless FX"
+                                     style="object-position: center top;
+                                            max-height: 100%;
+                                            background: var(--background-elevated);">
+                                <div class="project_overlay">
+                                    <div class="project_links">
+                                        <a href="https://github.com/Sighmore/limitlessfx" class="github_link">
+                                            <i class="fa fa-github"></i> View Source
+                                        </a>
+                                    </div>
+                                    <div class="project_info">
+                                        <h3>Limitless FX</h3>
+                                        <p>Gold trading platform with real-time data integration</p>
+                                        <div class="tech_stack">
+                                            <span class="tech_badge">React</span>
+                                            <span class="tech_badge">TradingView API</span>
+                                            <span class="tech_badge">Node.js</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!--================End Home Gallery Area =================-->
         
        <!--================Footer Area =================-->
-	   <footer class="footer_area p_120">
-		<div class="container">
-			<div class="row footer_inner">
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget ab_widget">
-						<div class="f_title">
-							<h3>About Me</h3>
-						</div>
-						<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-						<p>
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">InoXoft</a>
-</p>
-					</aside>
+	   <footer class="footer_area">
+		<div class="footer_inner">
+			<div class="f_widget">
+				<span class="copyright">© 2024 Simon Kuria</span>
+			</div>
+			
+			<div class="f_widget">
+				<div class="social_links">
+					<a href="https://github.com/Sighmore" class="social_link" title="GitHub">
+						<i class="fa fa-github"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/simon-kuria-4562301a6/" class="social_link" title="LinkedIn">
+						<i class="fa fa-linkedin"></i>
+					</a>
+					<a href="mailto:simonkuriah7@gmail.com" class="social_link" title="Email">
+						<i class="fa fa-envelope"></i>
+					</a>
 				</div>
-				<div class="col-lg-5 col-sm-6">
-					<aside class="f_widget news_widget">
-						<div class="f_title">
-							<h3>Suggestion Box</h3>
-						</div>
-						<p>Hit me up with an idea</p>
-						<div id="mc_embed_signup">
-							<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-								<div class="input-group d-flex flex-row">
-									<input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-									<button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-								</div>				
-								<div class="mt-10 info"></div>
-							</form>
-						</div>
-					</aside>
-				</div>
-				<div class="col-lg-2">
-					<aside class="f_widget social_widget">
-						<div class="f_title">
-							<h3>Follow Me</h3>
-						</div>
-						<p>Let us be social</p>
-						<ul class="list">
-							<li><a href="https://www.linkedin.com/in/simon-githongo-4562301a6/"><i class="fa fa-facebook"></i></a></li><!--LinkedIn-->
-							<li><a href="https://x.com/Simonku06649095"><i class="fa fa-twitter"></i></a></li><!--twitter-->
-							<li><a href="https://github.com/Sighmore"><i class="fa fa-dribbble"></i></a></li><!--Github-->
-							<li><a href="#"><i class="fa fa-behance"></i></a></li>
-						</ul>
-					</aside>
-				</div>
+			</div>
+			
+			<div class="f_widget">
+				<span class="made_with">
+					Made with <i class="fa fa-heart"></i> and Kotlin
+				</span>
 			</div>
 		</div>
 	</footer>

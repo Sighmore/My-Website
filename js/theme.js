@@ -415,5 +415,126 @@
         });
     }
 	
+	// Navigation and Section Highlighting
+	$(document).ready(function() {
+		// Get current page path
+		var path = window.location.pathname;
+		var page = path.split("/").pop() || 'index.html';
+		
+		// Handle page-level active state
+		$('.navbar-nav .nav-item').each(function() {
+			var href = $(this).find('a').attr('href');
+			// Check if href matches current page or section
+			if (href === page || 
+				(page === 'index.html' && href.startsWith('#')) || 
+				(href === 'portfolio.html' && page === 'portfolio.html') ||
+				(href === 'services.html' && page === 'services.html') ||
+				(href === 'contact.html' && page === 'contact.html')) {
+				$(this).addClass('active');
+			} else {
+				$(this).removeClass('active');
+			}
+		});
+
+		// Only apply scroll highlighting on index page
+		if (page === 'index.html') {
+			const sections = document.querySelectorAll('section[id]');
+			const navItems = document.querySelectorAll('.nav-link[data-section]');
+			
+			function highlightNavOnScroll() {
+				const scrollY = window.pageYOffset;
+				
+				sections.forEach(section => {
+					const sectionHeight = section.offsetHeight;
+					const sectionTop = section.offsetTop - 100;
+					const sectionId = section.getAttribute('id');
+					
+					if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+						navItems.forEach(item => {
+							const itemSection = item.getAttribute('data-section');
+							if (itemSection === sectionId) {
+								item.parentElement.classList.add('active');
+							} else {
+								item.parentElement.classList.remove('active');
+							}
+						});
+					}
+				});
+			}
+
+			// Smooth scroll for index page sections
+			navItems.forEach(item => {
+				item.addEventListener('click', function(e) {
+					if (this.getAttribute('href').startsWith('#')) {
+						e.preventDefault();
+						const targetId = this.getAttribute('href');
+						const targetSection = document.querySelector(targetId);
+						
+						window.scrollTo({
+							top: targetSection.offsetTop - 80,
+							behavior: 'smooth'
+						});
+					}
+				});
+			});
+
+			// Add scroll event listener
+			window.addEventListener('scroll', function() {
+				highlightNavOnScroll();
+			});
+		}
+	});
+
+	// Add this function to handle PDF download
+	function downloadCV() {
+		// Create a loading animation in the button
+		const downloadBtn = document.querySelector('.download_btn');
+		const originalContent = downloadBtn.innerHTML;
+		downloadBtn.innerHTML = `
+			<span class="material-icons loading">sync</span>
+			<span>Downloading...</span>
+		`;
+		
+		fetch('assets/SimonKuria_CV.pdf')
+			.then(response => response.blob())
+			.then(blob => {
+				// Create blob link to download
+				const url = window.URL.createObjectURL(blob);
+				const link = document.createElement('a');
+				link.href = url;
+				link.setAttribute('download', 'SimonKuria_CV.pdf');
+				
+				// Add link to body and trigger download
+				document.body.appendChild(link);
+				link.click();
+				link.parentNode.removeChild(link);
+				
+				// Restore button content
+				setTimeout(() => {
+					downloadBtn.innerHTML = originalContent;
+				}, 1000);
+			})
+			.catch(err => {
+				console.error('Error downloading CV:', err);
+				downloadBtn.innerHTML = `
+					<span class="material-icons error">error</span>
+					<span>Download failed</span>
+				`;
+				setTimeout(() => {
+					downloadBtn.innerHTML = originalContent;
+				}, 2000);
+			});
+	}
+
+	// Add this to your existing document ready function
+	$(document).ready(function() {
+		// Existing code...
+		
+		// Add click handler for CV download
+		$('.download_btn').on('click', function(e) {
+			e.preventDefault();
+			downloadCV();
+		});
+	});
 
 })(jQuery)

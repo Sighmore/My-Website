@@ -22,92 +22,76 @@
     </head>
     <body>
         
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/lgo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">SkillSet</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Work</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
-										<!-- <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li> -->
+                <!--================Header Menu Area =================-->
+				<header class="header_area">
+					<div class="main_menu">
+						<nav class="navbar navbar-expand-lg">
+							<div class="container">
+								<a class="navbar-brand" href="index.html">
+									<img src="img/lgo.png" alt="Simon Kuria" style="width: 100px; height: auto;">
+									</a>
+								<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+									<span class="material-icons" style="color: var(--text-primary)">menu</span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarNav">
+									<ul class="navbar-nav ml-auto">
+										<li class="nav-item active">
+											<a class="nav-link" href="index.html">
+												<span class="material-icons">home</span>
+									
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="portfolio.html">
+												<span class="material-icons">android</span>
+												<span>Projects</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="services.html">
+												<span class="material-icons">code</span>
+												<span>Skills</span>
+											</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="contact.html">
+												<span class="material-icons">Contact</span>
+												<span>Me</span>
+											</a>
+										</li>
 									</ul>
-								</li> 
-								<!-- <li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li>  -->
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
-            </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="banner_area">
-            <div class="box_1620">
-				<div class="banner_inner d-flex align-items-center">
-					<div class="container">
-						<div class="banner_content text-center">
-							<h2>Services</h2>
-							<div class="page_link">
-								<a href="index.html">Home</a>
-								<a href="services.html">Services</a>
+								</div>
 							</div>
-						</div>
+						</nav>
 					</div>
-				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
+				</header>
          <!--================Feature Area =================-->
-        <section class="feature_area p_120">
+        <section class="services_area p_120">
         	<div class="container">
         		<div class="main_title">
-        			<h2>Android App Design and Development</h2>
-        			<p>This services encompass creating intuitive user interfaces, implementing efficient back-end functionality, and optimizing performance. It involves using Kotlin, Jetpack Compose, and clean architecture to deliver robust, user-friendly mobile applications.</p>
+        			<h2>Android Development Expertise</h2>
+        			<p>Specialized in creating robust and scalable Android applications</p>
         		</div>
-        		<div class="feature_inner row">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-city"></i>
-        					<h4>Scalable and Maintainable Codebase</h4>
-        					<p>This involves using clean architecture principles(MVVM,MVI,MVC), modular design, and best coding practices. This ensures efficient development, easy updates, and long-term flexibility, enabling seamless growth and adaptability for evolving application needs.</p>
+        		<div class="row services_inner">
+        			<div class="col-lg-4">
+        				<div class="services_item">
+        					<i class="material-icons">architecture</i>
+        					<h4>Architecture & Design</h4>
+        					<p>MVVM, Clean Architecture, Repository Pattern, and modern Android app architecture principles</p>
         				</div>
         			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-skyline"></i>
-        					<h4>APi and Cloud Storage services</h4>
-        					<p>Powerful tools that enable seamless integration with external systems, allowing apps to securely store, retrieve, and manage data in real-time. They enhance scalability, accessibility, and performance across distributed environments.</p>
+        			<div class="col-lg-4">
+        				<div class="services_item">
+        					<i class="material-icons">code</i>
+        					<h4>Native Development</h4>
+        					<p>Kotlin-first development with Coroutines, Flow, and Jetpack Compose</p>
         				</div>
         			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-sketch"></i>
-        					<h4>Code Review and Team management</h4>
-        					<p>Ensuring high-quality, efficient, and error-free code through collaborative feedback. Effective team management fosters communication, task delegation, and alignment, promoting productivity, innovation, and smooth project delivery in a development team.</p>
+        			<div class="col-lg-4">
+        				<div class="services_item">
+        					<i class="material-icons">storage</i>
+        					<h4>Data Management</h4>
+        					<p>Room Database, DataStore, SQLite, and efficient data handling strategies</p>
         				</div>
         			</div>
         		</div>
