@@ -564,6 +564,24 @@
 			$('.navbar-collapse').removeClass('show');
 			$('.navbar-toggler .material-icons').text('menu');
 		});
+
+		// Remove previous chat toggle handlers
+		$(document).ready(function() {
+			// Remove old handlers
+			$('.chat-toggle').off('click');
+			$(document).off('click', '.image-overlay');
+
+			// Add new click handler for chat toggle
+			$('.chat-toggle').click(function(e) {
+				e.preventDefault();
+				$('.simon-image, .image-overlay').addClass('show');
+			});
+
+			// Close image when clicking overlay
+			$('.image-overlay').click(function() {
+				$('.simon-image, .image-overlay').removeClass('show');
+			});
+		});
 	});
 
 })(jQuery)

@@ -6208,3 +6208,303 @@ html {
     position: relative;
     z-index: 1;
 }
+
+/* Floating Chat Icon - Add this at the end of your style.css file */
+.floating-chat {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+}
+
+.chat-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--card-dark);
+    border: 2px solid var(--android-green);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    padding: 2px;  /* Add padding for the image */
+    overflow: hidden;  /* Keep image within bounds */
+}
+
+.chat-toggle .android-icon {
+    font-size: 32px;
+    color: var(--android-green);
+    transition: all 0.3s ease;
+}
+
+.chat-toggle:hover {
+    transform: scale(1.1);
+    background: rgba(61, 220, 132, 0.1);
+}
+
+.chat-toggle:hover .android-icon {
+    transform: rotate(10deg);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .chat-toggle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .chat-toggle .android-icon {
+        font-size: 28px;
+    }
+}
+
+/* Tech Stack Badges */
+.tech_stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech_badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+/* Individual badge styles */
+.tech_badge.kotlin {
+    background: rgba(127, 82, 255, 0.1);
+    color: #7F52FF;
+    border: 1px solid rgba(127, 82, 255, 0.2);
+}
+
+.tech_badge.compose {
+    background: rgba(61, 220, 132, 0.1);
+    color: #3DDC84;
+    border: 1px solid rgba(61, 220, 132, 0.2);
+}
+
+.tech_badge.android {
+    background: rgba(61, 220, 132, 0.1);
+    color: #3DDC84;
+    border: 1px solid rgba(61, 220, 132, 0.2);
+}
+
+.tech_badge.firebase {
+    background: rgba(255, 193, 7, 0.1);
+    color: #FFC107;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.tech_badge.git {
+    background: rgba(240, 80, 50, 0.1);
+    color: #F05032;
+    border: 1px solid rgba(240, 80, 50, 0.2);
+}
+
+.tech_badge.material {
+    background: rgba(66, 165, 245, 0.1);
+    color: #42A5F5;
+    border: 1px solid rgba(66, 165, 245, 0.2);
+}
+
+.tech_badge.mvvm {
+    background: rgba(156, 39, 176, 0.1);
+    color: #9C27B0;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+.tech_badge.room {
+    background: rgba(0, 150, 136, 0.1);
+    color: #009688;
+    border: 1px solid rgba(0, 150, 136, 0.2);
+}
+
+.tech_badge.coroutines {
+    background: rgba(255, 87, 34, 0.1);
+    color: #FF5722;
+    border: 1px solid rgba(255, 87, 34, 0.2);
+}
+
+.tech_badge.retrofit {
+    background: rgba(41, 182, 246, 0.1);
+    color: #29B6F6;
+    border: 1px solid rgba(41, 182, 246, 0.2);
+}
+
+.tech_badge.dagger {
+    background: rgba(233, 30, 99, 0.1);
+    color: #E91E63;
+    border: 1px solid rgba(233, 30, 99, 0.2);
+}
+
+.tech_badge.testing {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+/* Hover effects */
+.tech_badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .tech_stack {
+        gap: 8px;
+        padding: 0 20px;
+    }
+
+    .tech_badge {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Additional badge styles */
+.tech_badge.share {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+    border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+.tech_badge.api {
+    background: rgba(156, 39, 176, 0.1);
+    color: #9C27B0;
+    border: 1px solid rgba(156, 39, 176, 0.2);
+}
+
+.tech_badge.cloud {
+    background: rgba(3, 169, 244, 0.1);
+    color: #03A9F4;
+    border: 1px solid rgba(3, 169, 244, 0.2);
+}
+
+.tech_badge.security {
+    background: rgba(76, 175, 80, 0.1);
+    color: #4CAF50;
+    border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.tech_badge.analytics {
+    background: rgba(255, 152, 0, 0.1);
+    color: #FF9800;
+    border: 1px solid rgba(255, 152, 0, 0.2);
+}
+
+.tech_badge.notifications {
+    background: rgba(233, 30, 99, 0.1);
+    color: #E91E63;
+    border: 1px solid rgba(233, 30, 99, 0.2);
+}
+
+.tech_badge.location {
+    background: rgba(0, 150, 136, 0.1);
+    color: #009688;
+    border: 1px solid rgba(0, 150, 136, 0.2);
+}
+
+.tech_badge.camera {
+    background: rgba(121, 85, 72, 0.1);
+    color: #795548;
+    border: 1px solid rgba(121, 85, 72, 0.2);
+}
+
+.tech_badge.bluetooth {
+    background: rgba(63, 81, 181, 0.1);
+    color: #3F51B5;
+    border: 1px solid rgba(63, 81, 181, 0.2);
+}
+
+.tech_badge.payments {
+    background: rgba(139, 195, 74, 0.1);
+    color: #8BC34A;
+    border: 1px solid rgba(139, 195, 74, 0.2);
+}
+
+.tech_badge.offline {
+    background: rgba(96, 125, 139, 0.1);
+    color: #607D8B;
+    border: 1px solid rgba(96, 125, 139, 0.2);
+}
+
+.tech_badge.animation {
+    background: rgba(255, 87, 34, 0.1);
+    color: #FF5722;
+    border: 1px solid rgba(255, 87, 34, 0.2);
+}
+
+.tech_badge.accessibility {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+    border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+.tech_badge.performance {
+    background: rgba(255, 193, 7, 0.1);
+    color: #FFC107;
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+/* Image popup styles */
+.simon-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9998;
+}
+
+.simon-image.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 9997;
+}
+
+.image-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.intro_text {
+    font-size: 3rem;  /* Increased from 2rem to 3rem */
+    color: var(--android-green);
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+    text-align: center;
+}
