@@ -537,4 +537,33 @@
 		});
 	});
 
+	// Add this to your existing JavaScript
+	$(document).ready(function() {
+		// Mobile menu toggle
+		$('.navbar-toggler').click(function() {
+			$('.navbar-collapse').toggleClass('show');
+			// Toggle icon between menu and close
+			const icon = $(this).find('.material-icons');
+			if (icon.text() === 'menu') {
+				icon.text('close');
+			} else {
+				icon.text('menu');
+			}
+		});
+
+		// Close menu when clicking outside
+		$(document).click(function(event) {
+			if (!$(event.target).closest('.navbar').length) {
+				$('.navbar-collapse').removeClass('show');
+				$('.navbar-toggler .material-icons').text('menu');
+			}
+		});
+
+		// Close menu when clicking a link
+		$('.nav-link').click(function() {
+			$('.navbar-collapse').removeClass('show');
+			$('.navbar-toggler .material-icons').text('menu');
+		});
+	});
+
 })(jQuery)

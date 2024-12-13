@@ -5692,3 +5692,419 @@ html {
 .error {
     color: #ff5f56;
 }
+
+/* Mobile Responsiveness Improvements */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .editor_header {
+        padding: 8px 10px;
+        gap: 10px;
+    }
+
+    .editor_tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5px;
+    }
+
+    .nav-link {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Hero section adjustments */
+    .hero_content {
+        padding: 60px 0;
+    }
+
+    .hero_content h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .hero_text {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+
+    .hero_buttons {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Projects section */
+    .project_card {
+        margin-bottom: 20px;
+    }
+
+    .project_image {
+        height: 200px;
+    }
+
+    .project_tech_stack {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .tech_pill {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+
+    /* Skills section */
+    .skills_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill_category {
+        padding: 15px;
+    }
+
+    .skill_header {
+        font-size: 0.9rem;
+    }
+
+    /* Terminal sections */
+    .terminal_content {
+        padding: 15px;
+    }
+
+    .terminal_section {
+        margin-bottom: 20px;
+    }
+
+    .output {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    /* Contact form */
+    .form_group input,
+    .form_group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer_inner {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .social_links {
+        justify-content: center;
+    }
+}
+
+/* Additional tablet adjustments */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .project_card {
+        margin-bottom: 30px;
+    }
+
+    .skills_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+    .nav-link:hover,
+    .project_card:hover,
+    .social_link:hover {
+        transform: none;
+    }
+
+    .project_overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.7);
+    }
+}
+
+/* Header Mobile Responsiveness */
+@media (max-width: 768px) {
+    .header_area {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        background: var(--card-dark);
+        border-bottom: 1px solid rgba(61, 220, 132, 0.1);
+    }
+
+    .editor_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        height: 70px;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    .navbar-brand img {
+        width: 80px;
+        height: auto;
+    }
+
+    /* Hamburger Menu Button */
+    .navbar-toggler {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
+        background: rgba(61, 220, 132, 0.1);
+        border: 1px solid rgba(61, 220, 132, 0.2);
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .navbar-toggler .material-icons {
+        color: var(--android-green);
+        font-size: 24px;
+    }
+
+    /* Hide default elements */
+    .window_controls,
+    .editor_tabs {
+        display: none;
+    }
+
+    /* Dropdown Menu */
+    .navbar-collapse {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: var(--card-dark);
+        padding: 15px;
+        border-top: 1px solid rgba(61, 220, 132, 0.1);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar-collapse.show {
+        display: block;
+        animation: slideDown 0.3s ease;
+    }
+
+    /* Navigation Links */
+    .nav-tabs {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 15px;
+        color: var(--text-secondary);
+        border-radius: 6px;
+        font-family: monospace;
+        font-size: 0.95rem;
+        transition: all 0.2s ease;
+    }
+
+    .nav-link::before {
+        content: '>';
+        color: var(--android-green);
+    }
+
+    .nav-link span:last-child::after {
+        content: '.kt';
+        opacity: 0.7;
+        margin-left: 2px;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: rgba(61, 220, 132, 0.1);
+        color: var(--android-green);
+    }
+
+    /* Overlay when menu is open */
+    .navbar-collapse.show::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+}
+
+/* Creative Mobile Header Styles */
+@media (max-width: 777px) {
+    .editor_header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 15px;
+    }
+
+    .navbar-toggler {
+        display: flex !important;
+        align-items: center;
+        gap: 8px;
+        background: rgba(61, 220, 132, 0.1);
+        border: 1px solid rgba(61, 220, 132, 0.2);
+        padding: 8px 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        color: var(--text-primary);
+        font-family: monospace;
+    }
+
+    .navbar-toggler::before {
+        content: '$ menu';
+        color: var(--android-green);
+    }
+
+    .navbar-toggler .material-icons {
+        color: var(--text-primary);
+        font-size: 20px;
+    }
+
+    /* Mobile Menu Styling */
+    .editor_tabs {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 15px;
+        right: 15px;
+        background: var(--card-dark);
+        border-radius: 8px;
+        border: 1px solid rgba(61, 220, 132, 0.2);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    /* Terminal-style mobile menu */
+    .navbar-collapse.show .editor_tabs {
+        display: block;
+        animation: slideDown 0.3s ease;
+    }
+
+    .nav-tabs {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 12px 15px;
+        color: var(--text-secondary);
+        border-radius: 6px;
+        font-family: monospace;
+        transition: all 0.2s ease;
+    }
+
+    .nav-link::before {
+        content: '>';
+        color: var(--android-green);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+        background: rgba(61, 220, 132, 0.1);
+        color: var(--android-green);
+    }
+
+    .window_controls {
+        display: none;
+    }
+
+    /* Animation for menu */
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Overlay when menu is open */
+    .navbar-collapse.show::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+}
+
+/* Hero Buttons Spacing */
+@media (max-width: 768px) {
+    .hero_buttons {
+        flex-direction: column;
+        gap: 30px;  /* Increased from 20px for more separation */
+        align-items: center;
+        width: 100%;
+        padding: 0 20px;
+        margin: 50px 0;  /* Increased vertical margin */
+    }
+
+    .hero_buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 0;
+        padding: 15px 24px;  /* Increased vertical padding */
+        font-size: 1rem;  /* Ensure readable text size */
+    }
+}
+
+/* Additional button styling for better separation */
+.hero_buttons .btn + .btn {
+    margin-top: 10px;  /* Extra spacing between consecutive buttons */
+}
+
+/* Ensure buttons have proper hover state */
+.hero_buttons .btn:hover {
+    transform: translateY(-2px);
+    transition: transform 0.3s ease;
+}
