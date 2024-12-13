@@ -3249,7 +3249,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary {
-    background: var(--android-green);
+    background-color: #2b9d5f;  /* Darker green for better contrast */
+    color: #ffffff;
+    border-color: #2b9d5f;
     border: none;
     padding: 12px 32px;
     border-radius: 30px;
@@ -4281,10 +4283,11 @@ section {
 
 .line_number {
     min-width: 30px;
-    color: #858585;
+    color: rgba(61, 220, 132, 0.8);  /* Increased opacity for better visibility */
     margin-right: 16px;
     text-align: right;
     user-select: none;
+    font-weight: 500;  /* Made slightly bolder */
 }
 
 /* Syntax Highlighting */
@@ -4553,6 +4556,7 @@ section {
 .terminal_content {
     padding: 20px;
     color: #D4D4D4;
+    background: #1A1A1A;  /* Slightly darker background */
 }
 
 .testimonial_entry {
@@ -5235,22 +5239,35 @@ html {
 
 /* Testimonials Title Styling */
 .testimonials_area .main_title {
-    color: var(--text-primary);
+    text-align: center;
     margin-bottom: 40px;
 }
 
 .testimonials_area .main_title h2 {
-    color: var(--android-green);
+    color: #1A472A;  /* Dark forest green */
     font-size: 2.5rem;
     margin-bottom: 10px;
-    font-family: monospace;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    text-shadow: none;  /* Remove conflicting shadow */
 }
 
 .testimonials_area .main_title p {
-    color: var(--text-secondary);
-    font-family: monospace;
+    color: #2B5B3E;  /* Slightly lighter dark green */
+    font-family: 'JetBrains Mono', monospace;
     font-size: 1.1rem;
-    opacity: 0.8;
+    font-weight: 600;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.testimonials_area .main_title p::before {
+    content: '$';
+    color: #1A472A;  /* Matching dark green */
+    font-weight: bold;
 }
 
 /* About Area Styles */
@@ -6107,4 +6124,87 @@ html {
 .hero_buttons .btn:hover {
     transform: translateY(-2px);
     transition: transform 0.3s ease;
+}
+
+/* Testimonials Title Styling Update */
+.testimonials_area .main_title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testimonials_area .main_title h2 {
+    color: #4AE68C;  /* Brighter green for better contrast */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    text-shadow: none;  /* Remove conflicting shadow */
+}
+
+.testimonials_area .main_title p {
+    color: #F0F0F0;  /* Much lighter gray for better contrast */
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.testimonials_area .main_title p::before {
+    content: '$';
+    color: #4AE68C;  /* Matching green for the terminal prompt */
+    font-weight: bold;
+}
+
+/* Command text styling */
+.command_text {
+    color: #F0F0F0;  /* Light color for better visibility */
+    background: rgba(74, 230, 140, 0.1);  /* Subtle green background */
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* Testimonials Title Styling - Single Source of Truth */
+.testimonials_area .main_title {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.testimonials_area .main_title h2 {
+    color: #1A472A !important;  /* Dark forest green with !important */
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    text-shadow: none;  /* Remove conflicting shadow */
+}
+
+.testimonials_area .main_title p {
+    color: #2B5B3E !important;  /* Slightly lighter dark green with !important */
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.testimonials_area .main_title p::before {
+    content: '$';
+    color: #1A472A !important;  /* Matching dark green */
+    font-weight: bold;
+}
+
+/* Remove any conflicting background that might affect text color */
+.testimonials_area {
+    background: #ffffff;  /* Ensure light background */
+    position: relative;
+    z-index: 1;
 }
